@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de inscrição</title>
+  </head>
+  <body>
+    <form>
+      <h1>Formulario de inscrição</h1>
+
+      <label for="nome">Nome:</label><br />
+      <input type="text" id="name" name="name" required />
+      <br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+
+      <label for="telefone">Telefone:</label><br />
+      <input type="tel" id="telefone" name="telefone" /><br />
+
+      <input type="radio" id="fixo" name="linha" value="fixo" />
+      <label for="fixo">Fixo</label>
+
+      <input type="radio" id="pre-pago" name="linha" value="pre-pago" />
+      <label for="pre-pago">Pré-pago</label>
+      <br /><br />
+
+      <label for="">Area de atuação:</label><br />
+      <input
+        type="radio"
+        id="desenvolvimento"
+        name="area"
+        value="desenvolvimento"
+        required
+      />
+      <label for="desenvolvimento">Desenvolvimento</label>
+      <input
+        type="radio"
+        id="QualityAssuranse"
+        name="area"
+        value="QualityAssuranse"
+        required
+      />
+      <label for="QualityAssuranse">Quality Assuranse (QA)</label>
+      <input type="radio" id="dados" name="area" value="dados" required />
+      <label for="dados">Análise de dados</label>
+      <input type="radio" id="infra" name="area" value="infra" required />
+      <label for="infra">Infraestrutura</label><br /><br />
+
+      <label>Observações:</label><br />
+      <textarea
+        name="observacoes"
+        id="observacoes"
+        cols="45"
+        rows="6"
+        placeholder="Escreva algo sobre você..."
+      ></textarea>
+      <br /><br />
+      <input type="checkbox" id="ofertas" name="ofertas" value="sim" />
+      <label for="ofertas">Desejo receber ofertas e novidades por email</label>
+
+      <br /><br />
+
+      <button type="submit">Enviar formulário</button>
+    </form>
+  </body>
+</html>
